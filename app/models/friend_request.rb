@@ -1,4 +1,6 @@
 class FriendRequest < ApplicationRecord
+  enum status: { "accepted" => 0, "pending" => 1 }
+
   # Direct associations
 
   belongs_to :recipient,
