@@ -7,7 +7,7 @@
     <% @user.follows.each do |user| %>
       <li class="list-group-item d-flex align-items-center justify-content-between">
         <a href="/users/<%= user.id %>">
-          <%= user.first_name %>
+          <%= user %>
         </a>
 
       </li>

@@ -37,7 +37,7 @@
     <% end %>
 
     <%= f.label :photo_id %>
-    <%= f.collection_select :photo_id, Photo.all, :id, :to_s, {}, class: photo_class %>
+    <%= f.collection_select :photo_id, Photo.all, :id, :to_s, {}, class: "form-control" %>
     <% if photo_was_invalid %>
       <% comment.errors.full_messages_for(:photo).each do |message| %>
         <div class="invalid-feedback d-flex">

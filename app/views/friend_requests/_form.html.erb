@@ -15,7 +15,7 @@
     <% end %>
 
     <%= f.label :recipient_id %>
-    <%= f.collection_select :recipient_id, User.all, :id, :to_s, {}, class: recipient_class %>
+    <%= f.collection_select :recipient_id, User.all, :id, :to_s, {}, class: "form-control" %>
     <% if recipient_was_invalid %>
       <% friend_request.errors.full_messages_for(:recipient).each do |message| %>
         <div class="invalid-feedback d-flex">
@@ -37,7 +37,7 @@
     <% end %>
 
     <%= f.label :status %>
-    <%= f.text_field :status, class: status_class, placeholder: "Enter status" %>
+    <%= f.select :status, options_for_select(FriendRequest.statuses.keys), {}, class: "form-control" %>
     <% if status_was_invalid %>
       <% friend_request.errors.full_messages_for(:status).each do |message| %>
         <div class="invalid-feedback d-flex">

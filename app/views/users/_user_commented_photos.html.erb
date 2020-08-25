@@ -7,7 +7,7 @@
     <% @user.commented_photos.each do |photo| %>
       <li class="list-group-item d-flex align-items-center justify-content-between">
         <a href="/photos/<%= photo.id %>">
-          <%= photo.caption %>
+          <%= photo %>
         </a>
 
       </li>

@@ -13,6 +13,7 @@ class User < ApplicationRecord
            dependent: :delete_all # or :destroy if you need callbacks
 
   has_many   :received_friend_requests,
+             -> { pending },
              class_name: "FriendRequest",
              foreign_key: "recipient_id",
              dependent: :destroy
