@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: https://github.com/firstdraft/ideas_generators.git
-  revision: 3c39f58bde59786ecd9058c95426d864bd889fab
+  revision: 18ef94ffdc2ab0e11bd341eaf12b8237fa97c30d
   specs:
     ideas_generators (0.1.0)
       railties
@@ -137,7 +137,7 @@ GEM
       image_processing (~> 1.1)
       mimemagic (>= 0.3.0)
       mini_mime (>= 0.1.3)
-    cloudinary (1.16.1)
+    cloudinary (1.17.1)
       aws_cf_signer
       rest-client
     coffee-rails (5.0.0)
@@ -282,10 +282,10 @@ GEM
     nio4r (2.5.2)
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
-    octicons (10.0.0)
+    octicons (10.1.0)
       nokogiri (>= 1.6.3.1)
-    octicons_helper (10.0.0)
-      octicons (= 10.0.0)
+    octicons_helper (10.1.0)
+      octicons (= 10.1.0)
       rails
     orm_adapter (0.5.0)
     parallel (1.19.2)
@@ -404,7 +404,7 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    shoulda-matchers (4.3.0)
+    shoulda-matchers (4.4.1)
       activesupport (>= 4.2.0)
     sprockets (3.7.2)
       concurrent-ruby (~> 1.0)

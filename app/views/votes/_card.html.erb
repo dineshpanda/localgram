@@ -6,10 +6,18 @@
   <div class="card-body">
     <dl class="mb-1">
       <dt>User</dt>
-      <dd><%= vote.user_id %></dd>
+      <dd>
+        <% if @vote.user.present? %>
+          <%= link_to vote.user, vote.user %>
+        <% end %>
+      </dd>
 
       <dt>Photo</dt>
-      <dd><%= vote.photo_id %></dd>
+      <dd>
+        <% if @vote.photo.present? %>
+          <%= link_to vote.photo, vote.photo %>
+        <% end %>
+      </dd>
 
     </dl>
 

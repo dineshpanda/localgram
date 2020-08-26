@@ -9,7 +9,7 @@
 
   <div class="form-group">
     <%= f.label :photo_id %>
-    <%= f.collection_select :photo_id, Photo.all, :id, :to_s, {}, class: photo_class %>
+    <%= f.collection_select :photo_id, Photo.all, :id, :to_s, {}, class: "form-control" %>
   </div>
 
   <%= f.submit "Create comment", class: "btn btn-block btn-outline-secondary" %>

@@ -6,10 +6,18 @@
   <div class="card-body">
     <dl class="mb-1">
       <dt>Sender</dt>
-      <dd><%= friend_request.sender_id %></dd>
+      <dd>
+        <% if @friend_request.sender.present? %>
+          <%= link_to friend_request.sender, friend_request.sender %>
+        <% end %>
+      </dd>
 
       <dt>Recipient</dt>
-      <dd><%= friend_request.recipient_id %></dd>
+      <dd>
+        <% if @friend_request.recipient.present? %>
+          <%= link_to friend_request.recipient, friend_request.recipient %>
+        <% end %>
+      </dd>
 
       <dt>Status</dt>
       <dd><%= friend_request.status %></dd>

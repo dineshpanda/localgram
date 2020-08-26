@@ -21,7 +21,11 @@
       </dd>
 
       <dt>Owner</dt>
-      <dd><%= photo.owner_id %></dd>
+      <dd>
+        <% if @photo.owner.present? %>
+          <%= link_to photo.owner, photo.owner %>
+        <% end %>
+      </dd>
 
     </dl>
 
